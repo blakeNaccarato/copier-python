@@ -79,7 +79,7 @@
         "ms-azuretools.vscode-docker@1.29.1",
         "ms-python.debugpy@2024.6.0",
         "ms-python.python@2024.8.1",
-        "ms-python.vscode-pylance@2024.6.1",
+        "ms-python.vscode-pylance@2024.7.1",
         "ms-toolsai.jupyter@2024.4.0",
         "ms-vscode-remote.remote-containers@0.369.0",
         "ms-vscode.powershell@2024.2.2",

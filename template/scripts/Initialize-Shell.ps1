@@ -27,7 +27,7 @@ function Set-Env {
             ForEach-Object { $_.Matches.Groups[1].value }) : @{}
     foreach ($i in @{
             PATH                           = "$LocalBin$($IsWindows ? ';' : ':')$Env:PATH"
-            PYRIGHT_PYTHON_PYLANCE_VERSION = '2024.6.1'
+            PYRIGHT_PYTHON_PYLANCE_VERSION = '2024.7.1'
             PYDEVD_DISABLE_FILE_VALIDATION = '1'
             PYTHONIOENCODING               = 'utf-8:strict'
             PYTHONWARNDEFAULTENCODING      = '1'
