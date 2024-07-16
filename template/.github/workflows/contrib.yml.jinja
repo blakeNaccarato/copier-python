@@ -39,7 +39,7 @@ jobs:
         with:
           path: "{% raw %}${{ env.UV_CACHE_DIR }}{% endraw %}"
           key: "{% raw %}uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('lock.json') }}{% endraw %}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "{% raw %}${{ matrix.python }}{% endraw %}"
       - run: "scripts/Sync-Py.ps1 -Version '{{ python_version }}'"
@@ -62,7 +62,7 @@ jobs:
         with:
           path: "{% raw %}${{ env.UV_CACHE_DIR }}{% endraw %}"
           key: "{% raw %}uv-${{ matrix.runner }}-${{ matrix.python }}-${{ hashFiles('repo path with spaces/lock.json') }}{% endraw %}"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "{% raw %}${{ matrix.python }}{% endraw %}"
       - working-directory: "repo path with spaces"

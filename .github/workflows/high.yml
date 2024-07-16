@@ -22,11 +22,11 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
-      - uses: "actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808" # v4.3.3
+      - uses: "actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b" # v4.3.4
         with:
           name: "lock"
           path: "lock-high.json"
@@ -41,10 +41,10 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -61,10 +61,10 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -80,10 +80,10 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -99,10 +99,10 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1"
@@ -126,10 +126,10 @@ jobs:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
         with:
           submodules: True
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
-      - uses: "actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d" # v5.1.0
+      - uses: "actions/setup-python@39cd14951b08e74b54015e9e001cdefcf80e669f" # v5.1.1
         with:
           python-version: "${{ matrix.python }}"
       - run: "scripts/Sync-Py.ps1 -Version '${{ matrix.python }}'"
@@ -149,7 +149,7 @@ jobs:
     runs-on: "${{ matrix.runner }}"
     steps:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
-      - uses: "actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e" # v4.1.7
+      - uses: "actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16" # v4.1.8
         with:
           name: "lock"
       - uses: "stefanzweifel/git-auto-commit-action@8621497c8c39c72f3e2a999a26b4ca1b5058a842" # v5.0.1

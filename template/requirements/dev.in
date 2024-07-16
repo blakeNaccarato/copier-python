@@ -4,10 +4,10 @@
 --editable tests/
 debugpy==1.8.2
 fawltydeps==0.16.0
-pipdeptree==2.23.0
+pipdeptree==2.23.1
 pre-commit==3.7.1
-pyright==1.1.369
-ruff==0.4.10
+pyright==1.1.371
+ruff==0.5.2
 snakeviz==2.2.0
-sourcery==1.19.0
+sourcery==1.21.0
 towncrier==23.11.0
